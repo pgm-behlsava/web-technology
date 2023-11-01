@@ -1,0 +1,85 @@
+nav {
+  background-color: hsla(7, 73%, 68%, 0.801);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  height: 12vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    justify-content: center;
+  }
+}
+
+nav ul li {
+  padding: 0.5rem 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  nav ul li {
+    padding: 0.25rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul li {
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  nav ul li {
+    padding: 0.20rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+nav ul li a {
+  height: 100%;
+  color: #855064;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+@media (max-width: 700px) {
+  nav ul li  {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  nav ul li img {
+    width: 50%;
+  }
+}
+
+nav ul li a:hover {
+  color: hsl(0, 0%, 95%);
+  text-shadow: 1px 1px #855064;
+}
+
+.full-opacity {
+  background-color: hsl(7, 69%, 63%);
+  transition: all 0.2s ease;
+  border-bottom: 1px solid #855064;
+}
+
+.font-white {
+  color: hsl(0, 0%, 95%);
+  text-shadow: 1px 1px #3c342d;
+}

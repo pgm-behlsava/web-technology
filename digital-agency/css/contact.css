@@ -1,0 +1,276 @@
+html {
+  font-family: "Urbanist", Verdana, sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  color: #dedede;
+  background-image: url("../images/background-contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #dedede;
+  outline: 1px solid #383838;
+}
+
+main {
+  margin-top: 12vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 2rem;
+  background-color: #383838;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  display: flex;justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 2rem;
+  background-color: #383838;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+p {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  padding: 3rem 7rem;
+  background-color: hsla(0, 0%, 22%, 0.781);
+}
+
+@media (max-width: 700px) {
+  p {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+p span {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+@media (max-width: 400px) {
+  p span {
+    font-size: 0.9rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #383838;
+  color: #dedede;
+}
+
+@media (max-width: 700px) {
+  form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+#form-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30rem;
+  gap: 3rem;
+}
+
+@media (max-width: 700px) {
+  #form-contact {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+div .form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 1rem;
+}
+
+@media (max-width: 700px) {
+  .form-data label {
+    display: flex;
+  }
+
+  .form-data input {
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-data label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-data label {
+    font-size: 0.8rem;
+  }
+}
+
+#message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#message-box {
+  width: 20rem;
+  height: 15rem;
+}
+
+@media (max-width: 700px) {
+  #message-box {
+    width: 15rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #message-box {
+    width: 10rem;
+    height: 7rem;
+  }
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #383838;
+  color: #dedede;
+  border: 1px solid #dedede;
+  box-shadow: 0.15rem 0.15rem 0.01rem #dedede;
+}
+
+@media (max-width: 700px) {
+  button {
+    font-size: calc(1rem * 0.9);
+    padding: calc(0.5rem * 0.9);
+  }
+}
+
+@media (max-width: 500px) {
+  button {
+    font-size: calc(1rem * 0.8);
+    padding: calc(0.5rem * 0.8);
+  }
+}
+
+button:hover {
+  background-color: #dedede;
+  color: #383838;
+  border: 1px solid #383838;
+  box-shadow: none;
+  transition: 0.2s all ease;
+}
+
+
+.whitespace {
+  display: block;
+  height: 20vh;
+  background-color: hsla(0, 0%, 22%, 0.781);
+}
+
+iframe {
+  width: 66vw;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  iframe {
+    width: 50vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 500px) {
+  iframe {
+    display: none;
+    width: 24vw;
+    height: 20vh;
+  }
+}
+
+#iframe-link {
+  color: #dedede;
+  text-decoration: none;
+  display: none;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  #iframe-link {
+    display: inline-block;
+  }
+
+  #iframe-link:hover {
+    color: #383838;
+  }
+}
+
+@media (max-width: 400px) {
+  #iframe-link {
+    font-size: 1rem;
+  }
+}
+
+#newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 400px) {
+  #newsletter-container {
+    flex-direction: column;
+  }
+}

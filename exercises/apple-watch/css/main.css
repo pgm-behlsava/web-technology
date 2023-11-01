@@ -1,0 +1,15 @@
+html {
+    background-color: hsl(316, 100%, 76%);
+}
+
+h2 {
+    color: hsl(229, 76%, 50%);
+}
+
+.series {
+    text-transform: uppercase;
+}
+
+li {
+    list-style: square;
+}

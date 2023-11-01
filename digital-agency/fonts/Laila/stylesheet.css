@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Laila';
+    src: url('Laila-Regular.woff2') format('woff2'),
+        url('Laila-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Laila';
+    src: url('Laila-Light.woff2') format('woff2'),
+        url('Laila-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Laila';
+    src: url('Laila-Bold.woff2') format('woff2'),
+        url('Laila-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

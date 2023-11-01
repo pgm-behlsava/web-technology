@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.25rem 0.25rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+a:hover {
+    background: hsla(0, 0%, 0%, 0.3);
+}
+
+a svg {
+    fill: #FFF;
+    height: 0.8rem;
+}
+
+.wrapper {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.flex-nav ul {
+    border: 1px solid black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-nav ul li {
+    width: 100%;
+}
+
+.flex-nav ul li.social {
+    width: 30%;
+    flex-grow: 1;
+}

@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsla(7, 73%, 68%, 0.801);
+  height: 12vh;
+  bottom: 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  footer {
+    font-size: 0.6rem;
+  }
+}
+
+.icons8 a {
+  color: #855064;
+  text-decoration: none;
+}
+
+.icons8 a:hover {
+  color: hsl(0, 0%, 95%);
+}

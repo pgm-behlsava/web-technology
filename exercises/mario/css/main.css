@@ -10,7 +10,17 @@ main {
   width: 50rem;
 }
 
+@media (max-width: 850px) {
+  main {
+    width: calc(100% - 2rem);
+  }
+}
+
 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #b0b9b3;
   border-left: solid black 2px;
   border-bottom: solid black 2px;
@@ -18,24 +28,28 @@ div {
 }
 
 img {
-  display: block;
-  margin: 2rem 15rem;
-  max-width: 18.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 18.75rem;
   border: black dashed 2px;
   padding: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   padding: 1rem;
-  font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Kalam", Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Kalam', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Kalam", Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(246, 246, 246);
   border-left: #d8a767 solid 5px;
   padding-left: 1rem;
+  width: 100%;
 }
 
 p {
@@ -51,10 +65,14 @@ p {
   color: white;
   background-color: #ac262e;
   text-align: center;
+  padding: 2rem;
 }
 
 a {
   color: #b0b9b3;
+  text-wrap: wrap;
+  word-break: break-all;
+  /* overflow-wrap: break-word; */
 }
 
 a:hover {
